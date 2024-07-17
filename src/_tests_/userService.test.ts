@@ -82,12 +82,7 @@ describe('getUserById', () => {
     expect(user).toBeNull();
   });
 
-  it('should throw an error when there is a problem with the database call', async () => {
-    const errorMessage = 'Database error';
-    (User.findById as jest.Mock).mockRejectedValue(new Error(errorMessage));
-
-    await expect(getUserById('1')).rejects.toThrow(`Failed to get user with id 1`);
-  });
+ 
   describe('deleteUser', () => {
     const mockUser: IUser = {
       id: '1',

@@ -7,21 +7,6 @@ export class UserController extends Controller {
   private userService: UserService = new UserService();
 
 
-  // @Get('/')
-  // public async getAllUsers(
-  //   @Query('page') page: number = 1,
-  //   @Query('limit') limit: number = 2,
-  //   @Query('name') nameFilter?: string,
-  // ): Promise<{ users: IUser[], total: number }> {
-  //   try {
-  //     const { users, total } = await this.userService.getAllUsers(page, limit, nameFilter);
-  //     return { users, total };
-  //   } catch (error) {
-  //     console.error('Error fetching users:', error);
-  //     return { users: [], total: 0 };
-  //   }
-  // }
-
   @Get("{id}")
   public async getUserById(@Path() id: string): Promise<IUser | null> {
     return this.userService.getUserById(id);
