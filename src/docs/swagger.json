@@ -102,7 +102,7 @@
 		"securitySchemes": {}
 	},
 	"info": {
-		"title": "product-api",
+		"title": "project-api",
 		"version": "1.0.0",
 		"license": {
 			"name": "MIT"

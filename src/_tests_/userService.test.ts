@@ -3,7 +3,6 @@ import { mockRequest, mockRespone, myRouteHandler } from "../_mocks_";
 import User, { IUser } from "../database/models/user.model";
 import { deleteUser, getUserById, getUsers, updateUser } from "../database/repositories/user.repositories";
 jest.mock('../database/models/user.model');
-
 describe('getUsers', () => {
   const mockedUser = User as jest.Mocked<typeof User>;
 
