@@ -14,6 +14,7 @@ export async function getUserById(id: string): Promise<IUser | null> {
   }
 }
 
+
 // Function to create a new user
 export async function createUser(data: IUser): Promise<IUser> {
   const newUser = new User(data);
