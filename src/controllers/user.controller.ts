@@ -24,8 +24,10 @@ export class UserController extends Controller {
   }
 
   @Delete("{id}")
-  public async deleteUser(@Path() id: string): Promise<IUser | null> {
+  public async deleteUser(@Path() id:  string): Promise<IUser | null> {
     return this.userService.deleteUser(id);
+
+    
   }
   @Get("/")
   public async getUser(): Promise<IUser[]>{
