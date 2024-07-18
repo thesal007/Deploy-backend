@@ -12,6 +12,8 @@ esbuild.build({
   external: ['express'],  // Specify Node.js packages here
   loader: {
     '.ts': 'ts',
+
+    
   },
   plugins: [
     // (2) Solve: https://stackoverflow.com/questions/62136515/swagger-ui-express-plugin-issue-with-webpack-bundling-in-production-mode/63048697#63048697
